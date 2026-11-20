@@ -12,6 +12,15 @@
 ## フォルダ構成
 
 - `python/` … Phase 1〜3 のプロトタイプ用スクリプト
+- `plugin/` … JUCE (C++) の VST3 プラグイン本体
+- `.github/workflows/build.yml` … GitHub Actions で Windows 用 VST3 を自動ビルド
+
+## プラグインの入手（GitHub Actions）
+
+1. `plugin/` を変更して push すると、自動でビルドが始まる（Actions タブから手動実行も可）
+2. Actions タブ → 最新の実行 → 下部の Artifacts から `PreampPlugin-VST3-Windows` をダウンロード
+3. zip を展開し、`Preamp Plugin.vst3` を `C:\Program Files\Common Files\VST3` に置く
+4. DAW でプラグインを再スキャン
 
 ## 使い方（Phase 1）
 
