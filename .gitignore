@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# 音声ファイル（容量が大きく、著作権のある素材を誤って公開しないため）
+*.wav
+*.aif
+*.aiff
+*.flac
+*.mp3
+
+# 将来の JUCE / C++ ビルド成果物
+Builds/
+build/
+*.vst3
+
+# エディタ・OS
+.vscode/
+.DS_Store
+Thumbs.db
